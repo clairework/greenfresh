@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/greenfresh/static/css/main.6cc35c8b.css",
-    "main.js": "/greenfresh/static/js/main.be8a0af5.js",
+    "main.js": "/greenfresh/static/js/main.9997f672.js",
     "static/js/483.603f5ae7.chunk.js": "/greenfresh/static/js/483.603f5ae7.chunk.js",
     "static/css/779.5784809a.chunk.css": "/greenfresh/static/css/779.5784809a.chunk.css",
-    "static/js/779.a92d4f0a.chunk.js": "/greenfresh/static/js/779.a92d4f0a.chunk.js",
-    "static/js/882.467fd83c.chunk.js": "/greenfresh/static/js/882.467fd83c.chunk.js",
+    "static/js/779.f2a23191.chunk.js": "/greenfresh/static/js/779.f2a23191.chunk.js",
+    "static/js/882.6e324c41.chunk.js": "/greenfresh/static/js/882.6e324c41.chunk.js",
     "static/css/141.e609ae45.chunk.css": "/greenfresh/static/css/141.e609ae45.chunk.css",
     "static/js/141.e78b69ff.chunk.js": "/greenfresh/static/js/141.e78b69ff.chunk.js",
-    "static/js/381.32dd1357.chunk.js": "/greenfresh/static/js/381.32dd1357.chunk.js",
+    "static/js/381.351b5d5e.chunk.js": "/greenfresh/static/js/381.351b5d5e.chunk.js",
     "static/js/978.5f4e9b6f.chunk.js": "/greenfresh/static/js/978.5f4e9b6f.chunk.js",
     "static/js/769.eff32372.chunk.js": "/greenfresh/static/js/769.eff32372.chunk.js",
     "static/js/109.3048d98e.chunk.js": "/greenfresh/static/js/109.3048d98e.chunk.js",
@@ -33,14 +33,14 @@
     "static/media/footerlogo.jpg": "/greenfresh/static/media/footerlogo.9e0c02d10946b7f204b4.jpg",
     "index.html": "/greenfresh/index.html",
     "main.6cc35c8b.css.map": "/greenfresh/static/css/main.6cc35c8b.css.map",
-    "main.be8a0af5.js.map": "/greenfresh/static/js/main.be8a0af5.js.map",
+    "main.9997f672.js.map": "/greenfresh/static/js/main.9997f672.js.map",
     "483.603f5ae7.chunk.js.map": "/greenfresh/static/js/483.603f5ae7.chunk.js.map",
     "779.5784809a.chunk.css.map": "/greenfresh/static/css/779.5784809a.chunk.css.map",
-    "779.a92d4f0a.chunk.js.map": "/greenfresh/static/js/779.a92d4f0a.chunk.js.map",
-    "882.467fd83c.chunk.js.map": "/greenfresh/static/js/882.467fd83c.chunk.js.map",
+    "779.f2a23191.chunk.js.map": "/greenfresh/static/js/779.f2a23191.chunk.js.map",
+    "882.6e324c41.chunk.js.map": "/greenfresh/static/js/882.6e324c41.chunk.js.map",
     "141.e609ae45.chunk.css.map": "/greenfresh/static/css/141.e609ae45.chunk.css.map",
     "141.e78b69ff.chunk.js.map": "/greenfresh/static/js/141.e78b69ff.chunk.js.map",
-    "381.32dd1357.chunk.js.map": "/greenfresh/static/js/381.32dd1357.chunk.js.map",
+    "381.351b5d5e.chunk.js.map": "/greenfresh/static/js/381.351b5d5e.chunk.js.map",
     "978.5f4e9b6f.chunk.js.map": "/greenfresh/static/js/978.5f4e9b6f.chunk.js.map",
     "769.eff32372.chunk.js.map": "/greenfresh/static/js/769.eff32372.chunk.js.map",
     "109.3048d98e.chunk.js.map": "/greenfresh/static/js/109.3048d98e.chunk.js.map",
@@ -57,6 +57,6 @@
   },
   "entrypoints": [
     "static/css/main.6cc35c8b.css",
-    "static/js/main.be8a0af5.js"
+    "static/js/main.9997f672.js"
   ]
 }
