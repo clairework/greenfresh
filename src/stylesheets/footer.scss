@@ -1,0 +1,38 @@
+.footer {
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 0 12px;
+  background: $primary;
+  color: white;
+
+  @include media-breakpoint-up(lg) {
+    //border-radius: 64px;
+    //border-radius: 64px 64px 0 0;
+  }
+
+  .col-lg-6 {
+    img {
+      width: 128px;
+      @include media-breakpoint-up(lg) {
+        width: 200px;
+      }
+    }
+  }
+
+  .card {
+    border: none;
+
+    &-header {
+      border: none;
+      background: $primary;
+      color: white;
+    }
+
+    li,
+    a {
+      border: none;
+      background: $primary;
+      color: white;
+    }
+  }
+}

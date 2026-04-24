@@ -1,0 +1,189 @@
+.order {
+  .btn:disabled {
+    opacity: 1;
+  }
+
+  .card {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid $primary;
+    border-radius: 0px;
+
+    @include media-breakpoint-up(lg) {
+      border-top: 1px solid $primary;
+      border-right: 1px solid $primary;
+      border-left: 1px solid $primary;
+      border-bottom: 1px solid $primary;
+      border-radius: 8px;
+    }
+
+    &-border {
+      border-top: 3px solid $secondary;
+      border-right: 3px solid $secondary;
+      border-left: 3px solid $secondary;
+      border-bottom: 3px solid $secondary;
+      border-radius: 8px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    .btn-s {
+      border-radius: 4px;
+      padding: 4px 6px;
+
+      @include media-breakpoint-up(lg) {
+        border-radius: 8px;
+        padding: 8px;
+      }
+    }
+
+    .btn-L {
+      padding: 8px 32px;
+      @include media-breakpoint-up(lg) {
+        padding: 16px 64px;
+      }
+    }
+
+    .btn-num {
+      padding: 4px 4px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 8px 16px;
+      }
+    }
+
+    &-body {
+      padding: 0px 12px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 16px 16px;
+      }
+    }
+  }
+
+  .card {
+    input {
+      padding: 4px 12px;
+      border: 1px solid $primary;
+
+      @include media-breakpoint-up(lg) {
+        padding: 10px 24px;
+      }
+    }
+
+    .form-check-input {
+      padding: 6px 6px;
+    }
+  }
+
+  .btn-close {
+    background: $primary;
+    color: $secondary;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 100px;
+  }
+}
+.order-extend {
+  border-radius: 16px 16px 0 0;
+}
+
+//payment使用
+
+
+/* 全頁面背景 */
+.payment-page-wrapper {
+  background-color: #FAF7EF !important;
+  min-height: 100vh;
+  padding: 80px 0 100px 0;
+  margin-bottom: 0 !important;
+}
+
+/* 載入中畫面 */
+.payment-loading-wrap {
+  background-color: #FAF7EF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 原始成功圖示顏色與大小 */
+.payment-success-icon {
+  font-size: 4rem;
+  color: #7BA07C;
+}
+
+.payment-title {
+  letter-spacing: 2px;
+  color: #333;
+  font-weight: 800;
+}
+
+/* 訂單編號標籤 */
+.payment-id-badge {
+  background-color: #F0EEE6;
+  border: 1px solid #E0E0E0;
+  padding: 6px 20px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+/* 購物清單背景顏色區塊 */
+.product-list-container {
+  background-color: #f8fbf9; 
+  border: 1px solid #f1f1f1;
+}
+
+/* 商品列底線顏色淡化 */
+.product-item-row {
+  border-bottom: 1px solid #eef3f0 !important;
+}
+
+.product-item-row:last-child {
+  border-bottom: none !important;
+}
+
+/* 總額文字紅色強調 */
+.payment-total-price {
+  color: #C94C4C;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+/* 原始質感綠按鈕 */
+.btn-primary-custom {
+  background-color: #7BA07C;
+  border-color: #7BA07C;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #6A8B6B;
+  border-color: #6A8B6B;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(123, 160, 124, 0.3) !important;
+}
+
+/* 修正 Bootstrap 卡片圓角 */
+.payment-card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.border-top {
+  border-top: 1px solid #ddd !important;
+}

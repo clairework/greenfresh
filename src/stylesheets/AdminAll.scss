@@ -1,0 +1,134 @@
+/* 1. 金綠色大地色系表頭 (根據你提供的圖片) */
+.adminAll{
+.custom-thead th {
+  color:$primary !important; /* 淺金綠色 */
+  font-weight: 1000;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  background-color: transparent;
+}
+
+/* 2. Subtle 顏色 Badge 樣式 (已付款/未付款) */
+.bg-success-subtle {
+  background-color: #dcfce7 !important; /* 極淡綠色 */
+}
+.text-success {
+  color: #16a34a !important;
+}
+.border-success-subtle {
+  border-color: #bbf7d0 !important;
+}
+
+.bg-danger-subtle {
+  background-color: #fee2e2 !important; /* 極淡紅色 */
+}
+.text-danger {
+  color: #dc2626 !important;
+}
+.border-danger-subtle {
+  border-color: #fecaca !important;
+}
+
+/* 3. 其他細節微調 */
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.btn-light-primary {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+.btn-light-primary:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.card {
+  border: none;
+}
+
+//order Modal
+/* 主色調：活力橘 */
+:root {
+  --bs-orange: #fd7e14;
+  --bs-orange-rgb: 253, 126, 20;
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: var(--bs-orange);
+  border-color: var(--bs-orange);
+}
+.btn-orange:hover {
+  background-color: #e66c0d;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-outline-orange {
+  color: var(--bs-orange);
+  border-color: var(--bs-orange);
+}
+.btn-outline-orange:hover {
+  background-color: var(--bs-orange);
+  color: #fff;
+}
+
+/* 狀態標籤樣式 */
+.bg-orange-light { background-color: rgba(var(--bs-orange-rgb), 0.1) !important; }
+.bg-success-light { background-color: rgba(25, 135, 84, 0.1) !important; }
+.text-orange { color: var(--bs-orange) !important; }
+.bg-orange { background-color: var(--bs-orange) !important; color: #fff; }
+
+/* 細節調整 */
+.shadow-xs { box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.border-sm { border: 1px solid #dee2e6; }
+
+/* 針對捲軸的美化 (Chrome/Safari) */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #ced4da; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #adb5bd; }
+}
+
+//AdminProduct
+/* 全域輔助樣式 */
+
+/* 字體縮小 (用於副標題、分類等) */
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+/* 專業的表格樣式 */
+.table.table-borderless thead th {
+  border: 0;
+}
+
+/* 按鈕美化：柔和的按鈕背景色 (Bootstrap 5.2+ 才有，若無請補上) */
+.btn-light-primary {
+  background-color: #e0f2fe; /* 非常淡的藍色 */
+  color: #0284c7;           /* 主要藍色 */
+  border-color: transparent;
+}
+.btn-light-primary:hover {
+  background-color: #bae6fd;
+  color: #0369a1;
+}
+
+.btn-light-danger {
+  background-color: #fee2e2; /* 非常淡的紅色 */
+  color: #dc2626;           /* 警告紅色 */
+  border-color: transparent;
+}
+.btn-light-danger:hover {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+
+/* 讓表格 hover 效果更柔和 */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+  transition: background-color 0.2s ease;
+}

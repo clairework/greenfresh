@@ -1,0 +1,289 @@
+
+
+
+.home {
+
+/* Banner 背景設定 */
+.banner {
+  /* 設定背景圖與容器大小 */
+  background: url('../images/banner.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  height: 90vh; /* 全螢幕高度 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  object-fit: cover;
+  flex-direction: column; /* 垂直排列 */
+  justify-content: center; /* 垂直置中 */
+  align-items: center;    /* 水平置中 */
+  gap: 20px;              /* 兩排字之間的間距 */
+  font-family: "Microsoft JhengHei", sans-serif;
+  padding-bottom: 120px;  /* 往上推  */
+}
+/* --- 加入手機版微調 --- */
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh;      /* 手機版高度縮小，圖看起來就會變小 */
+    padding-bottom: 40px; /* 手機版不需要推這麼高，調整間距 */
+    gap: 10px;         /* 文字間距也縮小一點 */
+  }
+
+  /* 如果 banner 裡有大標題，也可以順便縮小字體 */
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+}
+/* 上排字體樣式 */
+.banner-title {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5px; /* 字間距 */
+  /* 文字陰影，產生白色發光/模糊效果，讓在淡色背景下也清晰 */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.banner-badge {
+  /* 基礎設定 */
+  position: relative;        /* 讓內層框線可以相對定位 */
+  display: inline-block;
+  padding: 12px 60px;        /* 調整內距以控制大小 */
+  color: #757575;            /* 文字顏色 */
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  text-align: center;
+  
+  /* 1. 最外層的樣式 */
+  background-color: rgba(255, 255, 255, 0.7); /* 半透明底色 */
+  border-radius: 100px;                       /* 膠囊型圓角 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 淡淡的投影 */
+  backdrop-filter: blur(4px);                /* 毛玻璃效果 */
+}
+
+/* 2. 內層細框線樣式 */
+.banner-badge::before {
+  content: "";               /* 必須設定內容為空 */
+  position: absolute;
+  /* 透過 top/left/right/bottom 設定框線與邊緣的距離 */
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  
+  /* 框線設定 */
+  border: 1px solid #c0c0c0; /* 淺灰色細線 */
+  border-radius: 100px;      /* 內層也要圓角，數值隨寬度微調 */
+  pointer-events: none;      /* 確保不干擾滑鼠點擊文字 */
+}
+
+/* 1. 指示器整體容器定位 */
+.scroll-indicator {
+  position: absolute;  /* 相對父層 Banner 定位 */
+  bottom: 20px;       /* 距離 Banner 底部 20px */
+  left: 50%;          /* 水平置中 */
+  transform: translateX(-50%); /* 確保真正的水平居中 */
+  display: flex;
+  flex-direction: column; /* 垂直排列文字與箭頭 */
+  align-items: center;    /* 水平置中內容 */
+  color: white;           /* 內容顏色 */
+  z-index: 10;            /* 確保在背景圖之上 */
+  pointer-events: none;   /* 防止阻擋滑鼠點擊背景 */
+}
+
+/* 2. 文字樣式 (Scroll) */
+.scroll-text {
+  font-family: Arial, sans-serif; /* 依據圖片選用無襯線字體 */
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px; /* 與箭頭的間距 */
+  letter-spacing: 1px;
+}
+
+/* 修改此處的 animation 屬性 */
+.scroll-arrow {
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg); 
+  
+  /* 改用 ease-in-out，時間稍微拉長一點更柔和 */
+  animation: float-arrow 2s ease-in-out infinite; 
+}
+
+/* 重新定義動畫：移除 opacity，改為平滑的循環位移 */
+@keyframes float-arrow {
+  0%, 100% {
+    /* 保持不變：起始位置 & 結束位置 (最高點) */
+    transform: rotate(45deg) translate(0px, 0px); 
+  }
+  50% {
+    /* 移動到中間時 (最低點)，向下漂浮 8px */
+    transform: rotate(45deg) translate(8px, 8px); 
+  }
+}
+
+//健康新知
+
+
+
+.title-zh {
+  font-size: 2rem;
+  //color: #333;
+  letter-spacing: 2px;
+}
+
+
+.description {
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+/* 圓角與圖片處理 */
+.custom-rounded {
+  border-radius: 30px; /* 較大的圓角符合原圖風格 */
+  object-fit: cover;
+  width: 100%;
+}
+
+/* 響應式微調 */
+@media (max-width: 768px) {
+  .title-group {
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+  }
+}
+
+
+//商品
+.card.text-decoration-none {
+  text-decoration: none !important;
+  color: unset; /* 避免標題變成藍色 */
+}
+
+.product-title {
+  letter-spacing: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.product-index-img {
+  object-fit: cover;
+  width: 516px;
+  height: 387px;
+
+  @include media-breakpoint-up(sm) {
+    width: 516px;
+    height: 387px;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 336px;
+    height: 252px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 456px;
+    height: 342px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 305px;
+    height: 229px;
+  }
+}
+
+
+//swiper調整
+.swiper-pagination-bullet {
+  background-color: #788f49 !important;
+}
+
+  /* 微調左右位置 */
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  background-color: rgba(245, 240, 225, 0.6) !important;
+  color:   #3b4a1e;
+  padding: 12px;
+  border-radius: 5px;
+  
+  // @include media-breakpoint-up(lg) {
+  //   display: none !important;
+  // }
+}
+
+
+
+//最新消息
+/* 標題顏色 */
+.news-title {
+  color: $dark;
+  font-weight: bold;
+}
+
+.news-title .text-english {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+/* 日期樣式 */
+.news-date-box {
+  min-width: 60px;
+}
+
+.news-year {
+  color: #776e63;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.news-date {
+  color: #fdc957;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* 列表虛線隔開 */
+.news-item {
+  border-bottom: 1px dashed #ddd;
+  font-size: 1rem;
+  color: #555;
+  transition: background-color 0.3s;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* 內容文字樣式 */
+.news-content {
+  padding-top: 5px;
+}
+
+/* 圖片微調 */
+.news-image {
+  max-width: 100%;
+  height: auto;
+}
+
+}

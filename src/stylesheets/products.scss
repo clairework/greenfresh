@@ -1,0 +1,75 @@
+
+/* 去除所有按鈕預設樣式 */
+.custom-tab-link {
+  background: none;
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+  
+  /* 使用 Bootstrap 的 CSS 變數 */
+  font-size: 1.5rem; 
+  color: var(--bs-dark); /* 沒選中時用黑色 */
+  
+  border-bottom: 4px solid transparent; 
+  transition: all 0.2s ease-in-out;
+}
+
+/* 當標籤被選中時 (Active) */
+.custom-tab-link.active {
+  /* 選中時套用 Primary 顏色變數 */
+  color: var(--bs-primary) !important; 
+  border-bottom: 4px solid var(--bs-primary);
+  font-weight: 800;
+}
+
+/* 滑鼠移上去時的顏色 (Hover) */
+.custom-tab-link:hover {
+  /* 這裡使用 primary 顏色，但加上一點透明度，或是直接用 primary */
+  color: var(--bs-primary); 
+  opacity: 0.8; /* 稍微變淡一點點，製造點擊感 */
+}
+
+/* 中文字樣式 */
+.custom-nav .zh {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* 1. 基礎樣式：讓按鈕撐滿整個 item 區域，點擊範圍才大 */
+.product-item {
+  width: 100%;
+  text-align: left;
+  display: block;
+  transition: all 0.3s ease; /* 讓變色平滑 */
+  border: none !important;    /* 移除 btn 預設邊框 */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* 2. Hover 效果：滑鼠移上去時背景變淡色 */
+.product-item:hover {
+  background-color: #f8f9fa; 
+  color: #6a9c78 !important; 
+}
+
+/* 3. 選中狀態 (Active)：當 selectCategory === category 時 */
+.product-item.text-primary {
+  background-color: #e9ecef !important; 
+  padding-left: 10px !important;      
+  border-radius: 4px;                 
+}
+
+/* 4. 移除 Bootstrap 按鈕點擊時的藍色外框 (Focus) */
+.product-item:focus {
+  box-shadow: none !important;
+}
+
+/* 針對外層 accordion-item 的小調整 */
+.accordion-item {
+  border: none !important;            /* 隱藏外層邊框線，讓畫面更清爽 */
+  border-bottom: 1px solid #eee !important; /* 改用淡線分隔 */
+}
+
+

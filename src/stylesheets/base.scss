@@ -1,0 +1,40 @@
+
+
+//Navbar 使用
+
+.navbar {
+  /* 縮減上下內距 */
+  padding-top: 20px;
+  padding-bottom: 10px; 
+  
+  /* 確保內容依然垂直置中 */
+  display: flex;
+  align-items: center; 
+}
+/* 製作分隔虛線 */
+.custom-nav .nav-item {
+  position: relative;
+}
+
+/* 手機選單移除邊框 */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important; 
+}
+
+
+
+/* 1. 增加間距：調整 NavLink 的左右 Padding */
+.custom-nav .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* 左右間距 */
+  padding: 0 1.5rem !important;   position: relative;
+}
+
