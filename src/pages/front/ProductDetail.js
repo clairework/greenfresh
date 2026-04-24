@@ -92,7 +92,7 @@ function ProductDetail() {
 
   return (
     <>
-      {isLoading && <Loading isFullPage />}
+    {isLoading && <Loading isFullPage isLoading={isLoading} />}
 
       <div className='container'>
         <div className='row justify-content-between mt-4 mb-7'>

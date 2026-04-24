@@ -10,36 +10,42 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Toast from '../../components/Toast';
 import { createAsyncMessage } from '../../reduce/slice/toastSlice';
+import Loading from '../../components/Loading';
 
 
 const apiPath = process.env.REACT_APP_API_URL+'/v2/api/'+ process.env.REACT_APP_API_PATH;
 function Home() {
-  
+const [isLoading, setIsLoading] = useState(false);  
 const dispatch = useDispatch();
 const [products, setProducts] = useState([]); // 儲存所有商品
 
   useEffect(() => {
-    // 從 API 取得商品數據
-     console.log('這裡:',apiPath);
-    fetch(`${apiPath}/products/all`)
-      .then(res => res.json())
-      .then(data => {
-        if (data.success) {
-          setProducts(data.products);
-         
-        }
-      })
-      .catch(error => {
-        const { message } = error.response.data;
-        dispatch(
-          createAsyncMessage({
-            text: message,
-            type: '取得資料失敗',
-            status: 'failed',
-          })
-        );
-      });
-  },[dispatch]);
+  // 1. 開始請求前，開啟 Loading
+  setIsLoading(true);
+
+  fetch(`${apiPath}/products/all`)
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.success) {
+        setProducts(data.products);
+      }
+    })
+    .catch((error) => {
+      // 加上安全檢查，避免 error.response 不存在導致當機
+      const message = error.response?.data?.message || '發生未知錯誤';
+      dispatch(
+        createAsyncMessage({
+          text: message,
+          type: '取得資料失敗',
+          status: 'failed',
+        })
+      );
+    })
+    .finally(() => {
+      // 2. 無論成功 (.then) 或失敗 (.catch)，最後都會執行這裡
+      setIsLoading(false);
+    });
+}, [dispatch]); 
 
       
 const filteredProducts = products.filter(product => product.category === '新鮮蔬果');
@@ -55,6 +61,7 @@ const newsData = [
 
   return (
     <>
+    <Loading isLoading={isLoading} />
     {/* banner區*/}
     <div className='home'>
       <section className="banner">

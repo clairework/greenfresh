@@ -1,10 +1,28 @@
 
 import bannerImg from '../../images/bannerAbout.jpg';
 import Banner from '../../components/Banner';
+import Loading from '../../components/Loading';
+import { useState, useEffect } from 'react';
 
 function About() {
+  const [isLoading, setIsLoading] = useState(false);  
+
+  useEffect(() => {
+    // 進入頁面時開啟 Loading
+    setIsLoading(true);
+
+    // 模擬 API 請求或執行某些初始化
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // 1秒後關閉
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <>
+    <Loading isLoading={isLoading} />
        <section className="mt-6 ">
             <div>
                <Banner 
