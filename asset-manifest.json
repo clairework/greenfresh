@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/greenfresh/static/css/main.6cc35c8b.css",
-    "main.js": "/greenfresh/static/js/main.9997f672.js",
+    "main.js": "/greenfresh/static/js/main.eb5add31.js",
     "static/js/483.603f5ae7.chunk.js": "/greenfresh/static/js/483.603f5ae7.chunk.js",
     "static/css/779.5784809a.chunk.css": "/greenfresh/static/css/779.5784809a.chunk.css",
     "static/js/779.f2a23191.chunk.js": "/greenfresh/static/js/779.f2a23191.chunk.js",
-    "static/js/882.6e324c41.chunk.js": "/greenfresh/static/js/882.6e324c41.chunk.js",
+    "static/js/882.fcda1cd7.chunk.js": "/greenfresh/static/js/882.fcda1cd7.chunk.js",
     "static/css/141.e609ae45.chunk.css": "/greenfresh/static/css/141.e609ae45.chunk.css",
     "static/js/141.e78b69ff.chunk.js": "/greenfresh/static/js/141.e78b69ff.chunk.js",
     "static/js/381.351b5d5e.chunk.js": "/greenfresh/static/js/381.351b5d5e.chunk.js",
@@ -25,19 +25,19 @@
     "static/media/bannerFruit.jpg": "/greenfresh/static/media/bannerFruit.154ec33df3fdfb50fdf1.jpg",
     "static/media/news01.jpg": "/greenfresh/static/media/news01.aed5ff0a53fb845ebe9e.jpg",
     "static/media/health01.jpg": "/greenfresh/static/media/health01.9f96a3978f45b2f9e189.jpg",
-    "static/media/bannerAbout.jpg": "/greenfresh/static/media/bannerAbout.0a7eba0552f9cc147e7f.jpg",
     "static/media/logo.png": "/greenfresh/static/media/logo.dfa0fe817a208e209369.png",
     "static/media/banner.jpg": "/greenfresh/static/media/banner.a35756bd9c8ebf783b98.jpg",
+    "static/media/bannerAbout.jpg": "/greenfresh/static/media/bannerAbout.e11f1fd0ea1727ef2f1a.jpg",
     "static/media/bootstrap-icons.woff?": "/greenfresh/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/greenfresh/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/footerlogo.jpg": "/greenfresh/static/media/footerlogo.9e0c02d10946b7f204b4.jpg",
     "index.html": "/greenfresh/index.html",
     "main.6cc35c8b.css.map": "/greenfresh/static/css/main.6cc35c8b.css.map",
-    "main.9997f672.js.map": "/greenfresh/static/js/main.9997f672.js.map",
+    "main.eb5add31.js.map": "/greenfresh/static/js/main.eb5add31.js.map",
     "483.603f5ae7.chunk.js.map": "/greenfresh/static/js/483.603f5ae7.chunk.js.map",
     "779.5784809a.chunk.css.map": "/greenfresh/static/css/779.5784809a.chunk.css.map",
     "779.f2a23191.chunk.js.map": "/greenfresh/static/js/779.f2a23191.chunk.js.map",
-    "882.6e324c41.chunk.js.map": "/greenfresh/static/js/882.6e324c41.chunk.js.map",
+    "882.fcda1cd7.chunk.js.map": "/greenfresh/static/js/882.fcda1cd7.chunk.js.map",
     "141.e609ae45.chunk.css.map": "/greenfresh/static/css/141.e609ae45.chunk.css.map",
     "141.e78b69ff.chunk.js.map": "/greenfresh/static/js/141.e78b69ff.chunk.js.map",
     "381.351b5d5e.chunk.js.map": "/greenfresh/static/js/381.351b5d5e.chunk.js.map",
@@ -57,6 +57,6 @@
   },
   "entrypoints": [
     "static/css/main.6cc35c8b.css",
-    "static/js/main.9997f672.js"
+    "static/js/main.eb5add31.js"
   ]
 }
