@@ -41,7 +41,8 @@
 * Swiper
 * Bootstrap 5
 
-# 前端介紹
+# 前台介紹
+
 ## 首頁
 <img width="1887" height="923" alt="homepage" src="https://github.com/user-attachments/assets/e96b2e76-cb58-46c7-ac1b-a9ab8158c8d0" />
 
@@ -113,8 +114,8 @@
 
 <img width="1359" height="822" alt="AdminOrderModal" src="https://github.com/user-attachments/assets/7b438583-aa88-46a7-a235-c95ecc75713d" />
 可修改訂單資訊及訂單內容
-
-
+<br>
+<br>
 其餘更多細節部分，歡迎至 Demo 網站觀看 https://clairework.github.io/greenfresh
 
 
