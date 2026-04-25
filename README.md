@@ -76,7 +76,37 @@
 <img width="1606" height="502" alt="OrderCoupon" src="https://github.com/user-attachments/assets/28c16062-d10c-4810-a729-3713c0010a21" />
 
 ## 訂購完成
+確認付款後即訂購完成 (學習作品僅模擬電商省略金流處理流程)
+
 
 <img width="962" height="824" alt="Payment" src="https://github.com/user-attachments/assets/874fc1a0-2a34-4331-b7a7-dcf66be7fa1b" />
+
+# 後台介紹
+
+## 管理員登入
+
+<img width="844" height="668" alt="AdminLogin" src="https://github.com/user-attachments/assets/abfe1252-1ba6-463b-8d1e-fd6b2f1dd751" />
+
+## 商品管理
+
+<img width="1900" height="921" alt="AdminProduct" src="https://github.com/user-attachments/assets/69de55dc-54aa-4bea-b48c-30b517328959" />
+
+## 商品維護
+<img width="1346" height="888" alt="AdminProductModal" src="https://github.com/user-attachments/assets/571602bc-4d71-4caf-8797-4fba7875a607" />
+
+* 商品列表可依照類別分類
+* 個別商品可上傳圖片連結網址，或上傳圖片檔案
+
+## 優惠券管理
+
+<img width="1901" height="594" alt="AdminCoupon" src="https://github.com/user-attachments/assets/3b92038a-7d7b-4c67-9471-9d7b0e778063" />
+
+## 訂單管理
+
+<img width="1913" height="741" alt="AdminOrder" src="https://github.com/user-attachments/assets/11209e81-6a95-44b1-89d7-209f22329d41" />
+
+
+
+
 
 
