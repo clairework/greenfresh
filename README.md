@@ -62,3 +62,21 @@
 
 <img width="1636" height="789" alt="Cart" src="https://github.com/user-attachments/assets/5814d778-655f-414b-8eb9-bc08ea007e5c" />
 
+## 結帳
+
+<img width="1668" height="787" alt="Checkout" src="https://github.com/user-attachments/assets/b76e79db-2dee-42f0-b3f4-b8b4912c7da2" />
+
+顯示商品明細、數量、金額、折扣等資訊
+
+## 填寫訂購人資訊
+
+<img width="1240" height="797" alt="OrderForm" src="https://github.com/user-attachments/assets/07db76c6-6e3c-4121-b8d9-5d7ff8f8dfbe" />
+
+## 優惠券折扣
+<img width="1606" height="502" alt="OrderCoupon" src="https://github.com/user-attachments/assets/28c16062-d10c-4810-a729-3713c0010a21" />
+
+## 訂購完成
+
+<img width="962" height="824" alt="Payment" src="https://github.com/user-attachments/assets/874fc1a0-2a34-4331-b7a7-dcf66be7fa1b" />
+
+
