@@ -54,6 +54,11 @@
 
 ## 商品介紹
 <img width="1654" height="813" alt="ProductDetail" src="https://github.com/user-attachments/assets/abfa9220-d0b8-4332-9619-1cc134d87cf3" />
+
 商品內容含商品說明、介紹、價格、數量等資訊
 可選擇購買數量、加入購物車或直接購買
+
+## 購物車
+
+<img width="1636" height="789" alt="Cart" src="https://github.com/user-attachments/assets/5814d778-655f-414b-8eb9-bc08ea007e5c" />
 
